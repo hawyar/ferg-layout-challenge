@@ -13,6 +13,7 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 $large-pad: 6rem;
 
+
 $family-sans-serif: "Roboto", sans-serif;
 $primary: $orange;
 $grey-dark: $light;
@@ -24,54 +25,62 @@ $navbar-item-hover-background-color: $grey;
 // Do not put this import elsewhere
 @import "../node_modules/bulma/bulma.sass";
 
+@mixin rgba-background($hexcolor, $opacity) {
+  background-color: rgba($hexcolor, $opacity);
+}
+// or  background-color: transparentize($dark, .8);
+
+.primary-divider {
+  width: 120px;
+  height: 4px;
+  background-color: $primary;
+}
+
 
 .hero-wrapper{
   background-image: url(../images/photo_kid.jpg);
   background-attachment: fixed;
   overflow-x: hidden;
   overflow-y: hidden;
-  // don't change height to auto
-  height: 528px;
+  height: 100vh;
   width:100vw;
   background-size: cover;
   position: relative;
 }
 
+.fa-chevron-right {
+  color: $primary;
+}
 
 .hero-banner {
   position: absolute;
-  top: 30%;
-  width: auto;
   right: 0;
+  bottom: 30%;
   @include until($desktop) {
     display: flex;
     bottom: 0;
     flex-direction: column;
-    color: red;
+    width: 100%;
   }
-
 }
+
+.absolute-rocket {
+  position: absolute;
+  left: 40%;
+  @include until($desktop) {
+  left: 30%;
+  }
+}
+
 
 .mb-extra {
   margin-bottom: 12rem;
 }
 
-.mb-xl {
-  margin-bottom: 6rem;
-
-}
-
-.flip-child {
-  order: 3;
-}
-
 .c-1 {
-  width: 560px;
   margin: 0 auto;
-}
-
-.primary-divider {
-  width: 120px;
-  height: 4px;
-  background-color: $primary;
+  width: 520px;
+  @include until($desktop) {
+    width: 85%;
+ }
 }
