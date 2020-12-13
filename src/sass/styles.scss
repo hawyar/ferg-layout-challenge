@@ -1,8 +1,5 @@
 @charset "utf-8";
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-// Brand Colors
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); // Brand Colors
 $orange: #AC4500;
 $dark: #252525;
 $grey: #383838;
@@ -11,57 +8,51 @@ $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 $large-pad: 6rem;
-
-
+$card-radius: none;
+$card-header-shadow: 0;
 $family-sans-serif: "Roboto", sans-serif;
 $primary: $orange;
 $grey-light: $beige-light;
-$navbar-item-hover-background-color: $grey;
-
-
-// Do not put this import elsewhere
+$navbar-item-hover-background-color: $grey; // Do not put this import elsewhere
 @import "../node_modules/bulma/bulma.sass";
-
 @mixin rgba-background($hexcolor, $opacity) {
   background-color: rgba($hexcolor, $opacity);
 }
 // or  background-color: transparentize($dark, .8);
 
+.full-width {
+  width: 100%;
+}
 
-// Set icon colors
 .fa-chevron-right {
   color: $primary;
 }
-
 
 .primary-divider {
   width: 120px;
   height: 4px;
 }
 
-
 .side-divider {
   width: 90px;
   height: 1px;
-  background-color: $grey;
 }
 
-.hero-wrapper{
-  background-image: url(../images/photo_kid.jpg);
+.hero-wrapper {
+  background-image: url("../images/photo_kid.jpg");
   background-attachment: fixed;
   overflow-x: hidden;
   overflow-y: hidden;
   height: 100vh;
-  width:100vw;
+  width: 100vw;
   background-size: cover;
   position: relative;
-
 }
 
 .banner {
   padding-right: 8rem;
   @include until($desktop) {
-      padding-right: 0rem;
+    padding-right: 0;
   }
 }
 
@@ -69,7 +60,7 @@ $navbar-item-hover-background-color: $grey;
   position: absolute;
   right: 0;
   bottom: 30%;
-    width: 720px;
+  width: 720px;
   @include until($desktop) {
     display: flex;
     bottom: 0;
@@ -78,20 +69,17 @@ $navbar-item-hover-background-color: $grey;
   }
 }
 
-
 .absolute-rocket {
   position: absolute;
   right: 44%;
   top: 78%;
   @include until($desktop) {
-      display: none;
+    display: none;
   }
 }
 
-
 .pl-extra {
   padding: 3rem 3rem 3rem 8rem;
-
   @include until($desktop) {
     padding: 1.2rem;
   }
@@ -106,5 +94,18 @@ $navbar-item-hover-background-color: $grey;
 }
 
 .feature-card {
-  height: 400px
+  height: 400px;
+}
+
+.border-bottom {
+  border-top: 2px solid $white;
+}
+
+#triangle-up {
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 48px solid $light;
 }
