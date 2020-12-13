@@ -30,6 +30,13 @@ $navbar-item-hover-background-color: $grey;
 }
 // or  background-color: transparentize($dark, .8);
 
+
+// Set icon colors
+.fa-chevron-right {
+  color: $primary;
+}
+
+
 .primary-divider {
   width: 120px;
   height: 4px;
@@ -46,16 +53,21 @@ $navbar-item-hover-background-color: $grey;
   width:100vw;
   background-size: cover;
   position: relative;
+
 }
 
-.fa-chevron-right {
-  color: $primary;
+.banner {
+  padding-right: 8rem;
+  @include until($desktop) {
+      padding-right: 0rem;
+  }
 }
 
 .hero-banner {
   position: absolute;
   right: 0;
   bottom: 30%;
+    width: 720px;
   @include until($desktop) {
     display: flex;
     bottom: 0;
@@ -64,23 +76,33 @@ $navbar-item-hover-background-color: $grey;
   }
 }
 
+
 .absolute-rocket {
   position: absolute;
-  left: 40%;
+  right: 44%;
+  top: 78%;
   @include until($desktop) {
-  left: 30%;
+      display: none;
   }
 }
 
 
-.mb-extra {
-  margin-bottom: 12rem;
+.pl-extra {
+  padding: 3rem 3rem 3rem 8rem;
+
+  @include until($desktop) {
+    padding: 1.2rem;
+  }
 }
 
-.c-1 {
-  margin: 0 auto;
-  width: 520px;
-  @include until($desktop) {
-    width: 85%;
- }
+.pr-8 {
+  padding-right: 8rem;
+}
+
+.mt-8 {
+  margin-top: 10rem;
+}
+
+.feature-card {
+  height: 400px
 }

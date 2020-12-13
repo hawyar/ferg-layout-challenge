@@ -17,7 +17,7 @@
     <div class="navbar-brand is-flex pl-3-is-desktop is-hoverable">
       <!-- Brand logo -->
       <a class="navbar-item" href="/">
-        <img src="images/ico_logo.svg" alt="Bulma: a modern CSS framework based on Flexbox" width="auto" height="28" />
+        <img src="images/ico_logo.svg" alt="Kid looking at the sky" width="auto" height="28" />
         <p class="ml-3 has-text-white has-text-weight-bold is-size-5">LOGO</p>
       </a>
 
@@ -30,7 +30,7 @@
     </div>
 
     <div id="nav-menu" class="navbar-menu padding-right-large has-background-dark">
-      <div class="navbar-end is-flex-desktop is-flex-direction-row-reverse has-text pr-6 is-hoverable">
+      <div class="navbar-end is-flex-desktop is-flex-direction-row-reverse has-text pr-8 is-hoverable">
         <a class="navbar-item is-size-6 has-text-weight-normal" href="/">
           Home
         </a>
@@ -52,30 +52,31 @@
 
   <!-- HERO IMAGE -->
   <section class="hero-wrapper">
+
     <div class="hero-overlay"></div>
     <!-- HERO BANNER  -->
+
     <section class="hero-banner">
-      <div class="slant has-text-centered-touch has-text-right-desktop has-background-primary has-text-white is-flex is-flex-direction-column py-6">
+      <div class="banner has-text-centered-touch has-text-right-desktop has-background-primary has-text-white is-flex is-flex-direction-column py-6">
         <p class="is-uppercase">CAN you COMPLETE OUR LAYOUT CHALLENGE?</p>
-        <div class="">
+        <div class="container">
           <h2 class="has-text-weight-bold is-size-1 is-uppercase">
             GIANT TAGLINE
           </h2>
           <div class="white-divider mb-5"></div>
+          <p class="">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
-
-        <p class="c-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
       </div>
 
-      <div class="has-background-black py-3 px-6 has-text-centered is-flex is-align-content-center is-justify-content-center">
-        <p class="is-size-4 has-text-weight-normal mr-3 is-uppercase">
+      <div class="has-background-black py-3 px-6 has-text-centered is-flex is-align-content-center is-justify-content-center w-6">
+        <a href="/" class="is-size-4 has-text-weight-normal mr-3 is-uppercase">
           Learn more
-        </p>
+        </a>
           <i class="fas fa-chevron-right is-align-self-center"></i>
       </div>
     </section>
@@ -85,50 +86,60 @@
 
 
   <!-- FEARTURE COLUMN -->
-  <section class="">
+  <section class="has-text-left">
     <div class="is-flex-desktop">
-      <div class="has-background-dark is-half p-6" style="height: 420px">
-        <div class="primary-divider mb-5"></div>
+      <div class="has-background-dark pl-extra feature-card">
+        <hr class="primary-divider mb-5"/>
         <h3 class="is-size-2 has-text-weight-light">
           <span class="has-text-weight-bold">Commence </span>Lift-off
         </h3>
-        <p>
+        <p class="" style="width: 75%">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation.
         </p>
-        <div class="has-text-centered">
-          <button class="button is-primary border-color-red mt-5">
+        <div class="has-text-left">
+          <button class="button is-primary border-color-red mt-6">
             Watch takeoff
           </button>
         </div>
       </div>
 
-      <!-- ROCKET -->
-      <div class="is-align-self-center absolute-rocket">
-        <img class="" src="images/photo_rocket.png" style="" />
-      </div>
-
-      <div class="has-background-grey-darker p-6 is-half" style="height: 460px">
-        <div class="primary-divider mb-5"></div>
+      <div class="has-background-grey-darker pl-extra feature-card">
+        <hr class="primary-divider mb-5"/>
         <h3 class="is-size-2 has-text-weight-light">
-          <span class="has-text-weight-bold">The Final</span> Frontier
+            <span class="has-text-weight-bold">The Final</span> Frontier
         </h3>
-        <p>
+        <p class="" style="width: 75%">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitation.
         </p>
-        <div class="has-text-centered">
-          <button class="button is-primary border-color-red mt-5">
-            Explore more
+        <div class="has-text-left">
+          <button class="button is-primary border-color-red mt-6">
+            Watch takeoff
           </button>
         </div>
       </div>
 
 
+
+      <!-- ROCKET -->
+      <div class="is-align-items-self-end absolute-rocket">
+        <img class=""  alt="Standing rocket"src="images/photo_rocket.png" style="" />
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="has-text-dark is-size-1-desktop is-size-3-touch has-text-weight-bold has-text-centered">“No Bucks. No Buck Rogers.”</h1>
     </div>
   </section>
+
+  <footer class="footer has-background-primary">
+  <div class="content has-text-centered">
+    <span href="/">© Copyright 2020</span>  |  <a href="/">Ferguson</a>  |  <a>Privacy Policy</a> | <a href="/">Terms & Conditions</a>
+  </div>
+</footer>
 
   <script src="./main.js"></script>
 </body>
