@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="has-navbar-fixed-top">
 
@@ -13,7 +12,7 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav  class="navbar has-background-primary is-fixed-top">
+  <nav class="navbar has-background-primary is-fixed-top">
     <div class="navbar-brand is-flex pl-3-is-desktop is-hoverable">
       <!-- Brand logo -->
       <a class="navbar-item" href="/">
@@ -30,20 +29,22 @@
     </div>
 
     <div id="nav-menu" class="navbar-menu padding-right-large has-background-dark">
-      <div class="navbar-end is-flex-desktop is-flex-direction-row-reverse has-text pr-8 is-hoverable">
-        <a class="navbar-item is-size-6 has-text-weight-normal" href="/">
+
+      <!-- has-text-white does not cascade to the nav items -->
+      <div class="navbar-end is-flex-desktop is-flex-direction-row-reverse is-size-6 has-text has-text-weight-normal pr-8 is-hoverable">
+        <a class="navbar-item has-text-white" href="/">
           Home
         </a>
-        <a class="navbar-item is-size-6 has-text-weight-normal" href="/">
+        <a class="navbar-item has-text-white" href="/">
           Contact
         </a>
-        <a class="navbar-item is-size-6 has-text-weight-normal" href="/">
+        <a class="navbar-item has-text-white" href="/">
           Locations
         </a>
-        <a class="navbar-item is-size-6 has-text-weight-normal" href="/">
+        <a class="navbar-item has-text-white" href="/">
           Services
         </a>
-        <a class="navbar-item is-size-6 has-text-weight-normal" href="/">
+        <a class="navbar-item has-text-white" href="/">
           About
         </a>
       </div>
@@ -74,10 +75,10 @@
       </div>
 
       <div class="has-background-black py-3 px-6 has-text-centered is-flex is-align-content-center is-justify-content-center w-6">
-        <a href="/" class="is-size-4 has-text-weight-normal mr-3 is-uppercase">
+        <a href="/" class="is-size-4 has-text-weight-normal mr-3 is-uppercase has-text-white">
           Learn more
         </a>
-          <i class="fas fa-chevron-right is-align-self-center"></i>
+        <i class="fas fa-chevron-right is-align-self-center"></i>
       </div>
     </section>
 
@@ -86,10 +87,10 @@
 
 
   <!-- FEARTURE COLUMN -->
-  <section class="has-text-left">
+  <section class="has-text-left has-text-white">
     <div class="is-flex-desktop">
       <div class="has-background-dark pl-extra feature-card">
-        <hr class="primary-divider mb-5"/>
+        <hr class="primary-divider mb-5 has-background-primary" />
         <h3 class="is-size-2 has-text-weight-light">
           <span class="has-text-weight-bold">Commence </span>Lift-off
         </h3>
@@ -106,9 +107,9 @@
       </div>
 
       <div class="has-background-grey-darker pl-extra feature-card">
-        <hr class="primary-divider mb-5"/>
+        <hr class="primary-divider mb-5 has-background-primary" />
         <h3 class="is-size-2 has-text-weight-light">
-            <span class="has-text-weight-bold">The Final</span> Frontier
+          <span class="has-text-weight-bold">The Final</span> Frontier
         </h3>
         <p class="" style="width: 75%">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -126,20 +127,90 @@
 
       <!-- ROCKET -->
       <div class="is-align-items-self-end absolute-rocket">
-        <img class=""  alt="Standing rocket"src="images/photo_rocket.png" style="" />
+        <img class="" alt="Standing rocket" src="images/photo_rocket.png" style="" />
       </div>
-    </div>
-
-    <div class="mt-8">
-      <h2 class="has-text-dark is-size-1-desktop is-size-3-touch has-text-weight-bold has-text-centered">“No Bucks. No Buck Rogers.”</h1>
     </div>
   </section>
 
-  <footer class="footer has-background-primary">
+  <section>
+    <div class="mt-8 mb-6 has-text-centered px-6">
+      <h2 class="has-text-dark is-size-1-desktop is-size-4-touch has-text-weight-bold">“No Bucks. No Buck Rogers.”</h1>
+        <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center mt-3	">
+          <hr class="side-divider has-background-danger" />
+          <p class="is-size-6 px-6-desktop px-3 m-0">
+            The Right Stuff (1983)
+          </p>
+          <hr class="side-divider has-background-danger" />
+        </div>
+    <div class="columns">
+      <div class="column">
+        <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-left mb-4">
+          <div class="has-background-primary is-flex is-justify-content-center is-align-items-center" style="min-width: 70px; min-height: 70px; border-radius: 50%">
+            <img src="images/ico_logo.svg" alt="Kid looking at the sky"  />
+          </div>
+          <p class="is-size-6 ml-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-left mb-4">
+          <div class="has-background-primary is-flex is-justify-content-center is-align-items-center" style="min-width: 70px; min-height: 70px; border-radius: 50%">
+            <img src="images/ico_logo.svg" alt="Kid looking at the sky"  />
+          </div>
+          <p class="is-size-6 ml-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-left">
+          <div class="has-background-primary is-flex is-justify-content-center is-align-items-center" style="min-width: 70px; min-height: 70px; border-radius: 50%">
+            <img src="images/ico_logo.svg" alt="Kid looking at the sky"  />
+          </div>
+          <p class="is-size-6 ml-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-left mb-4">
+          <div class="has-background-primary is-flex is-justify-content-center is-align-items-center" style="min-width: 70px; min-height: 70px; border-radius: 50%">
+            <img src="images/ico_logo.svg" alt="Kid looking at the sky"  />
+          </div>
+          <p class="is-size-6 ml-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-left mb-4">
+          <div class="has-background-primary is-flex is-justify-content-center is-align-items-center" style="min-width: 70px; min-height: 70px; border-radius: 50%">
+            <img src="images/ico_logo.svg" alt="Kid looking at the sky"  />
+          </div>
+          <p class="is-size-6 ml-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="is-flex is-flex-direction-row is-justify-content-center is-align-items-center has-text-left mb-4">
+          <div class="has-background-primary is-flex is-justify-content-center is-align-items-center" style="min-width: 70px; min-height: 70px; border-radius: 50%">
+            <img src="images/ico_logo.svg" alt="Kid looking at the sky"  />
+          </div>
+          <p class="is-size-6 ml-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- <footer class="footer has-background-primary">
   <div class="content has-text-centered">
     <span href="/">© Copyright 2020</span>  |  <a href="/">Ferguson</a>  |  <a>Privacy Policy</a> | <a href="/">Terms & Conditions</a>
   </div>
-</footer>
+</footer> -->
 
   <script src="./main.js"></script>
 </body>

@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 // Brand Colors
-$light: #ffff;
 $orange: #AC4500;
 $dark: #252525;
 $grey: #383838;
@@ -16,9 +15,7 @@ $large-pad: 6rem;
 
 $family-sans-serif: "Roboto", sans-serif;
 $primary: $orange;
-$grey-dark: $light;
 $grey-light: $beige-light;
-$link: $light;
 $navbar-item-hover-background-color: $grey;
 
 
@@ -40,9 +37,14 @@ $navbar-item-hover-background-color: $grey;
 .primary-divider {
   width: 120px;
   height: 4px;
-  background-color: $primary;
 }
 
+
+.side-divider {
+  width: 90px;
+  height: 1px;
+  background-color: $grey;
+}
 
 .hero-wrapper{
   background-image: url(../images/photo_kid.jpg);
@@ -100,7 +102,7 @@ $navbar-item-hover-background-color: $grey;
 }
 
 .mt-8 {
-  margin-top: 10rem;
+  margin-top: 13rem;
 }
 
 .feature-card {
