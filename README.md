@@ -1,18 +1,5 @@
-### Ferguson Ad Layout CHALLENGE
 
-
-## Getting Started
-
-To setup a local version of the repo please follow the following
-
-- npm
-
-```sh
-npm install npm@latest -g
-```
-
-
-### Installation
+### Getting Started
 
 1. Clone the repo
 
@@ -25,4 +12,17 @@ git clone https://github.com/hawyar/ferg-layout-challenge.git
 ```sh
 npm install
 # or use yarn
+```
+
+2. Run
+
+```sh
+npm run serve
+# or yarn serve
+```
+
+Or to build
+```sh
+npm run build
+# or yarn build
 ```
