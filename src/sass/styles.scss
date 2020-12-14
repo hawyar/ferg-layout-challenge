@@ -9,6 +9,7 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 $large-pad: 6rem;
 $link: #ffff;
+// $gap: 170px;
 $card-radius: none;
 $card-header-shadow: 0;
 $family-sans-serif: "Roboto", sans-serif;
@@ -40,7 +41,10 @@ $navbar-item-hover-background-color: $grey; // Do not put this import elsewhere
 }
 
 .footer-link-divider {
-    width: 45%;
+  border-left: 1px;
+ width: 1px;
+ height: 100%;
+
 }
 
 .hero-wrapper {
@@ -71,15 +75,23 @@ $navbar-item-hover-background-color: $grey; // Do not put this import elsewhere
     bottom: 0;
     flex-direction: column;
     width: 100%;
+
   }
+}
+
+.is-relatve {
+  position: relative;
+
 }
 
 .absolute-rocket {
   position: absolute;
-  right: 44%;
-  top: 78%;
+  left: 40%;
+  top: 80%;
+
   @include until($desktop) {
-    display: none;
+    left: 35%;
+    top: 120;
   }
 }
 
@@ -96,6 +108,15 @@ $navbar-item-hover-background-color: $grey; // Do not put this import elsewhere
 
 .mt-8 {
   margin-top: 13rem;
+}
+
+.mt-16 {
+  margin-top: 16rem;
+
+  @include until($desktop) {
+    margin-top: 35rem;
+
+  }
 }
 
 .feature-card {
@@ -122,4 +143,8 @@ $navbar-item-hover-background-color: $grey; // Do not put this import elsewhere
     list-style: inside;
   }
 
+}
+
+.footer-tings {
+  color: red;
 }
