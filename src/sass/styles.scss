@@ -9,7 +9,7 @@ $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 $large-pad: 6rem;
 $link: #ffff;
-// $gap: 170px;
+$gap: 160px;
 $card-radius: none;
 $card-header-shadow: 0;
 $family-sans-serif: "Roboto", sans-serif;
@@ -86,12 +86,12 @@ $navbar-item-hover-background-color: $grey; // Do not put this import elsewhere
 
 .absolute-rocket {
   position: absolute;
-  left: 40%;
-  top: 80%;
+  left: 38%;
+  top: -50%;
 
   @include until($desktop) {
-    left: 35%;
-    top: 120;
+    left: 40%;
+    top: 75%;
   }
 }
 
