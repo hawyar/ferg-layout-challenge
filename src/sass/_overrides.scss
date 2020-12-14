@@ -1,0 +1,18 @@
+@use "_typography.scss" as typography;
+
+$orange: #AC4500;
+$dark: #252525;
+$grey: #383838;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+$large-pad: 6rem;
+$link: #ffff;
+$gap: 32px;
+$card-radius: none;
+$card-header-shadow: 0;
+$family-sans-serif:  typography.$font-family;
+$primary: $orange;
+$grey-light: $beige-light;
+$navbar-item-hover-background-color: $grey;

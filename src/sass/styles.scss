@@ -1,39 +1,21 @@
 @charset "utf-8";
 
-@use "_typography.scss" as type;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@use "_typography.scss" as typography;
+@import "_overrides.scss";
 
 
-// Brand Specs
-$orange: #AC4500;
-$dark: #252525;
-$grey: #383838;
-$pink: #FA7C91;
-$brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$large-pad: 6rem;
-$link: #ffff;
-$gap: 32px;
+// Typography
+$sizes: typography.$sizes;
 
-$sizes: type.$sizes;
-
-
-
-$card-radius: none;
-$card-header-shadow: 0;
-$family-sans-serif: "Roboto", sans-serif;
-$primary: $orange;
-$grey-light: $beige-light;
-$navbar-item-hover-background-color: $grey;
+.has-text-weight-extrabold {
+  font-weight: typography.$font-weight-extrabold;
+}
 
 // Keep import here to use breakpoints in the custom styled below
-// If Bulma included a little bit of utilties this would go away
 @import "../node_modules/bulma/bulma.sass";
 @mixin rgba-background($hexcolor, $opacity) {
   background-color: rgba($hexcolor, $opacity);
 }
-// or  background-color: transparentize($dark, .8);
 
 .full-width {
   width: 100%;
@@ -78,6 +60,7 @@ $navbar-item-hover-background-color: $grey;
   @include until($desktop) {
     padding-right: 0;
     clip-path: 0;
+    clip-path: inherit;
   }
 }
 
