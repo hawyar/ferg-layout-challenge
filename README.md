@@ -11,6 +11,13 @@ Requirements
 git clone https://github.com/hawyar/ferg-layout-challenge.git
 ```
 
+####  3. Move into directory
+
+
+```sh
+cd ferg-layout-challenege
+```
+
 ####  2. Install dependencies
 
 
@@ -19,7 +26,7 @@ npm install
 # or yarn
 ```
 
-####  3. Run
+####  4. Run
 
 ```sh
 npm run dev
