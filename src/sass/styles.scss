@@ -17,17 +17,19 @@ $sizes: typography.$sizes;
 @mixin rgba-background($hexcolor, $opacity) {
   background-color: rgba($hexcolor, $opacity) !important;
 }
+
+ // separate spacing for more flexbility
 @mixin padding($top, $right, $bottom, $left) {
   padding: $top $right $bottom $left;
 }
 
-
-// utilities
-
-.w-75 {
-  width: 75%;
+@mixin margin($top, $right, $bottom, $left) {
+  margin: $top $right $bottom $left;
 }
 
+
+
+// utilities
 
 .has-text-weight-extrabold {
   font-weight: typography.$font-weight-extrabold;
@@ -47,18 +49,32 @@ $sizes: typography.$sizes;
   height: 1px;
 }
 
+.wrapper {
+  @include padding(0rem, 12rem, 0rem, 12rem);
+  @include until($desktop) {
+  @include padding(4rem, 2rem, 1rem, 2rem);
+  }
+}
+
 .p-extra {
   @include padding(2rem, 6rem, 2rem, 6rem);
   @include until($desktop) {
-  // a simple reset on touch devices
-  padding: 0;
+  @include padding(4rem, 2rem, 1rem, 2rem);
+  }
+}
+
+.card-section {
+  @include padding(6rem, 12rem, 6rem, 12rem);
+  @include until($desktop) {
+  @include padding(4rem, 2rem, 1rem, 2rem);
   }
 }
 
 .footer-link-divider {
   border-left: 1px;
   width: 1px;
-  height: 100%;
+  height: 120px;
+  margin: 0 3rem 0 3rem;
 }
 
 .hero-wrapper {
@@ -105,22 +121,16 @@ $sizes: typography.$sizes;
   }
 }
 
-.is-relatve {
-  position: relative;
-}
-
 .absolute-rocket {
   position: absolute;
   left: 38%;
   top: -50%;
   @include until($desktop) {
-    // left: 20;
-    // top: 85%;
-    display: none;
+    left: 30%;
+    top: 80%;
+    display: block;
   }
 }
-
-
 
 .pr-8 {
   @include padding(0, 8rem, 0, 0);
@@ -145,13 +155,19 @@ $sizes: typography.$sizes;
   border-top: 2px solid $white;
 }
 
-#triangle-up {
+.triangle {
   margin: 0 auto;
   width: 0;
   height: 0;
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-bottom: 48px solid $light;
+  display: block;
+
+  @include until($desktop) {
+    display: none;
+  }
+
 }
 
 .footer-links {
@@ -159,8 +175,4 @@ $sizes: typography.$sizes;
     list-style-type: inherit;
     list-style: inside;
   }
-}
-
-.footer-tings {
-  color: red;
 }
