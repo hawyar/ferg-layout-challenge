@@ -1,28 +1,33 @@
 
 ### Getting Started
 
-1. Clone the repo
+Requirements
+ - Node.js
+
+
+#### 1. Clone the repo
 
 ```sh
 git clone https://github.com/hawyar/ferg-layout-challenge.git
 ```
 
-2. Install dependencies
+####  2. Install dependencies
+
 
 ```sh
 npm install
 # or yarn
 ```
 
-2. Run
+####  3. Run
 
 ```sh
-npm run serve
-# yarn serve
+npm run dev
+# yarn dev
 ```
 
-Or to build
+Or to watch
 ```sh
-npm run build
-# yarn build
+npm run watch
+# yarn watch
 ```
