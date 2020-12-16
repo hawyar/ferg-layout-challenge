@@ -1,8 +1,6 @@
 @charset "utf-8";
-
 @use "_typography.scss" as typography;
 @import "_overrides.scss";
-
 
 // Typography
 $sizes: typography.$sizes;
@@ -11,20 +9,23 @@ $sizes: typography.$sizes;
   font-weight: typography.$font-weight-extrabold;
 }
 
+
 // Keep import here to use breakpoints in the custom styled below
 @import "../node_modules/bulma/bulma.sass";
+// Custom mixin helpers
 @mixin rgba-background($hexcolor, $opacity) {
-  background-color: rgba($hexcolor, $opacity);
+  background-color: rgba($hexcolor, $opacity) !important;
+}
+@mixin padding($top, $right, $bottom, $left) {
+  padding: $top $right $bottom $left;
 }
 
-.full-width {
-  width: 100%;
-}
 
 .fa-chevron-right {
   color: $primary;
 }
 
+// Divider
 .primary-divider {
   width: 120px;
   height: 4px;
@@ -35,11 +36,20 @@ $sizes: typography.$sizes;
   height: 1px;
 }
 
+
+ // Extra padding size
+.p-extra {
+  padding: 3rem 3rem 3rem 8rem;
+  @include until($desktop) {
+    padding: 1.2rem;
+  }
+}
+
+
 .footer-link-divider {
   border-left: 1px;
- width: 1px;
- height: 100%;
-
+  width: 1px;
+  height: 100%;
 }
 
 .hero-wrapper {
@@ -54,14 +64,26 @@ $sizes: typography.$sizes;
 }
 
 .banner {
-  padding-right: 8rem;
   clip-path: polygon(6% 0, 100% 0%, 100% 100%, 0% 100%);
-
+  padding-right: 8rem;
   @include until($desktop) {
     padding-right: 0;
-    clip-path: 0;
     clip-path: inherit;
   }
+}
+
+.second-banner {
+  width: 65%;
+  clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
+  @include until($desktop) {
+    padding-right: 0;
+    clip-path: inherit;
+    width: 100%;
+  }
+}
+
+.w-75 {
+  width: 75%;
 }
 
 .hero-banner {
@@ -69,45 +91,34 @@ $sizes: typography.$sizes;
   right: 0;
   bottom: 30%;
   width: 720px;
+
   @include until($desktop) {
     display: flex;
     bottom: 0;
     flex-direction: column;
     width: 100%;
-
   }
 }
 
-// @include until($desktop) {
-//     $gap: 32000px;
-//   }
-
 .is-relatve {
   position: relative;
-
 }
 
 .absolute-rocket {
   position: absolute;
   left: 38%;
   top: -50%;
-
   @include until($desktop) {
-    // left: 40%;
-    // top: 75%;
+    // left: 20;
+    // top: 85%;
     display: none;
   }
 }
 
-.pl-extra {
-  padding: 3rem 3rem 3rem 8rem;
-  @include until($desktop) {
-    padding: 1.2rem;
-  }
-}
+
 
 .pr-8 {
-  padding-right: 8rem;
+  @include padding(0, 8rem, 0, 0);
 }
 
 .mt-8 {
@@ -116,10 +127,8 @@ $sizes: typography.$sizes;
 
 .mt-16 {
   margin-top: 16rem;
-
   @include until($desktop) {
     margin-top: 35rem;
-
   }
 }
 
@@ -141,12 +150,10 @@ $sizes: typography.$sizes;
 }
 
 .footer-links {
-
   li {
     list-style-type: inherit;
     list-style: inside;
   }
-
 }
 
 .footer-tings {

@@ -11,18 +11,18 @@ git clone https://github.com/hawyar/ferg-layout-challenge.git
 
 ```sh
 npm install
-# or use yarn
+# or yarn
 ```
 
 2. Run
 
 ```sh
 npm run serve
-# or yarn serve
+# yarn serve
 ```
 
 Or to build
 ```sh
 npm run build
-# or yarn build
+# yarn build
 ```
