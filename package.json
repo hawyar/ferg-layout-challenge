@@ -8,7 +8,8 @@
     "sass": "^1.30.0"
   },
   "scripts": {
-    "dev": "parcel serve watch src/index.html --port 5050 --open",
+    "dev": "parcel serve watch src/index.html --port 8080",
+    "dev-open": "parcel serve watch src/index.html --port 8080 --open",
     "build": "parcel build src/index.html"
   },
   "dependencies": {

@@ -5,14 +5,15 @@
 // Typography
 $sizes: typography.$sizes;
 
-.has-text-weight-extrabold {
-  font-weight: typography.$font-weight-extrabold;
-}
 
 
-// Keep import here to use breakpoints in the custom styled below
+
+
+// Keep import here to use breakpoints in the custom styles below
 @import "../node_modules/bulma/bulma.sass";
-// Custom mixin helpers
+
+
+// Mixin helpers
 @mixin rgba-background($hexcolor, $opacity) {
   background-color: rgba($hexcolor, $opacity) !important;
 }
@@ -21,11 +22,21 @@ $sizes: typography.$sizes;
 }
 
 
+// utilities
+
+.w-75 {
+  width: 75%;
+}
+
+
+.has-text-weight-extrabold {
+  font-weight: typography.$font-weight-extrabold;
+}
+
 .fa-chevron-right {
   color: $primary;
 }
 
-// Divider
 .primary-divider {
   width: 120px;
   height: 4px;
@@ -36,15 +47,13 @@ $sizes: typography.$sizes;
   height: 1px;
 }
 
-
- // Extra padding size
 .p-extra {
-  padding: 3rem 3rem 3rem 8rem;
+  @include padding(2rem, 6rem, 2rem, 6rem);
   @include until($desktop) {
-    padding: 1.2rem;
+  // a simple reset on touch devices
+  padding: 0;
   }
 }
-
 
 .footer-link-divider {
   border-left: 1px;
@@ -72,20 +81,6 @@ $sizes: typography.$sizes;
   }
 }
 
-.second-banner {
-  width: 65%;
-  clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
-  @include until($desktop) {
-    padding-right: 0;
-    clip-path: inherit;
-    width: 100%;
-  }
-}
-
-.w-75 {
-  width: 75%;
-}
-
 .hero-banner {
   position: absolute;
   right: 0;
@@ -96,6 +91,16 @@ $sizes: typography.$sizes;
     display: flex;
     bottom: 0;
     flex-direction: column;
+    width: 100%;
+  }
+}
+
+.second-banner {
+  width: 65%;
+  clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
+  @include until($desktop) {
+    padding-right: 0;
+    clip-path: inherit;
     width: 100%;
   }
 }
